@@ -1,0 +1,54 @@
+body {
+  background-color: cadetblue;
+}
+
+.Texto {
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+
+.BLOQUE {
+  background-color: darkcyan;
+  color: white;
+  margin-left: 550px;
+  margin-right: 550px;
+  padding: 50px;
+}
+
+select[multiple] {
+  height: 1.5em;
+  vertical-align: top;
+}
+
+select[multiple]:focus,
+select[multiple]:active {
+  height: auto;
+}
+
+button {
+  width: 700px;
+  background-color: grey;
+  color: black;
+}
+
+textarea {
+  width: 700px;
+  height: 60px;
+  background-color: cadetblue;
+  color: grey;
+}
+
+.Correo,
+.Nombre,
+.Edad {
+  width: 700px;
+  background-color: cadetblue;
+  color: white;
+}
+
+select {
+  width: 700px;
+  background-color: cadetblue;
+  color: white;
+}
