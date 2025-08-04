@@ -1,12 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="estilo.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Titulos-->
+    <div class="Texto">
+    <h1>Formulario sena v1</h1>
+    <h2>Gracias por dejar sus datos</h2>
+    </div>
+
+ <!-- INCIO DE FORMULARIO--> <!-- 1BLOQUE-->
+    <div class="BLOQUE">
+    <form>
+    <label>Nombre</label> <br>
+    <input type="text" class="Nombre" placeholder="Ingrese su nombre:"> <br>
+    <label>Email</label> <br>
+    <input type="email" class="Correo" placeholder="Ingrese su correo"> <br>
+    <label>Edad</label> <br>
+    <input type="text" class="Edad" placeholder="Ingrese su edad"> <br>
+    <hr>
+     <!-- 2BLOQUE-->
+    <label >Selecciona una opcion:</label><br>
+    <select name="opciones" id="opciones">
+      <option value="opcion0">Selecciona una opcion</option>
+      <option value="opcion1">opcion 1</option>
+      <option value="opcion2">opcion 2</option>
+      <option value="opcion3">opcion 3</option>
+    </select>
+    <div>
+        <label>Piensa comprar un carro nuevo en los proximos 5 años?</label> <br>
+        <input type="radio" id="si" value="Si"> 
+        <label>si</label><br>
+        <input type="radio" id="No" value="No"> 
+        <label>No</label><br>
+        <input type="radio" id="Talvez" value="Talvez"> 
+        <label>Tal Vez</label>
+    </div>
+    <hr>
+     <!-- 3BLOQUE-->
+      <div>
+        <label >Selecciona su marca de carro favorita:</label><br>
+        <select name="opciones" id="opciones">
+        <option value="opcion0">Selecciona una opcion</option>
+        <option value="opcion1">KIA</option>
+        <option value="opcion2">Mercedes</option>
+        <option value="opcion3">Renault</option>
+        </select>
+      </div>
+
+      <div>
+        <label> Que tipo de medio de transporte es el que mas utilizas?</label> <br>
+        <input type="checkbox" id="carro" > 
+        <label>Carro</label><br>
+        <input type="checkbox" id="bote" > 
+        <label>Bote</label><br>
+        <input type="checkbox" id="bicicleta" > 
+        <label>Bicicleta</label><br>
+        <input type="checkbox" id="moto" > 
+        <label>Motocicleta</label><br>
+        <input type="checkbox" id="avion" > 
+        <label>Avion</label><br>
+      </div>
+      <div>
+        <label>Comentario o sugerencias?</label><br>
+        <textarea placeholder="Ingresa tus comentarios por favor"></textarea>
+      </div>
+    </form>
+    <button onclick="alerta()">Enviaar</button>
+    </div>
+
+    <script>
+        function alerta() {
+            window.alert("Graciass Por Rellenar el formulario")
+        }
+    </script>
 </body>
 </html>
